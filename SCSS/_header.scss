@@ -1,0 +1,151 @@
+.white {
+  color: white;
+}
+
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.my-header {
+  color: blue;
+  background-color: #4267B2;
+  height: 43px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// .header-container{
+//  add    <div class="header-container">
+// }
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.fa-facebook-f {
+  color: #4267B2;
+  background-color: white;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: 67px;
+  margin-right: 7px;
+  font-size: 1.3em;
+  border-bottom: 1px solid #29487d;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-box {
+  display: inline-block;
+  width: 405px;
+  height: 24px;
+  align-self: center;
+  margin-right: 0px;
+  border: 0px solid white;
+  padding: 0px;
+  text-indent: 5px;
+  font: arial;
+}
+
+.fa-search {
+  color: grey;
+  display: flex;
+  background-color: white;  
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 24px;
+  width: 40px;
+  margin-left: 0px;
+  border: 0px solid white;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.center-icons {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.right-icons-group {
+  @extend .flex-reverse;
+}
+
+.fa-caret-down {
+  @extend .center-icons;
+  font-size: 1.1em;
+  color: $font-color;
+}
+
+.fa-question-circle {
+  @extend .center-icons;
+  font-size: 1.2em;
+  color: $font-color;
+}
+
+.pipe {
+  @extend .center-icons;
+  color: #606163;
+  height: 20px;
+}
+
+.fa-globe {
+  @extend .center-icons;
+  font-size: 1.2em;
+  color: white;
+}
+
+.messenger-head {
+  @extend .center-icons;
+  color: $font-color;
+  font-size: 1.5em;
+}
+
+.fa-user-friends {
+  @extend .center-icons;
+  color: $font-color;
+  font-size: 1.2em;
+}
+
+.right-text-group {
+  @extend .flex-reverse;
+}
+
+.header-text {
+  font-size: 12px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+}
+
+.home, 
+.amir, 
+.find-friends {
+  @extend .header-text;
+}
+
+.profile {
+  margin-right: 8px;
+}
+
+.head-avatar {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
