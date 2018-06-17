@@ -1,0 +1,140 @@
+.other-column {
+  display: flex;
+  flex-direction: column;
+  width: $other-width;
+
+  .stories-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: $post-border;
+
+    .stories-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding-top: 2px;
+
+      .stories-text {
+        color: gray;
+        font-weight: 600;
+        font-family: Helvetica;
+        font-size: 13px;
+      }
+
+      .stories-dots {
+        color: gray;
+        font-weight: bold;
+      }
+    }
+
+    .add-container {
+      display: flex;
+      padding-bottom: 11px;
+
+      .add-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 49px;
+        width: 49px;
+        font-size: 32px;
+        font-weight: bold;
+        border: $light-grey-border;
+        border-radius: 50%;
+        background-color: $compose-bg;
+        color: #1475F3;
+      }
+
+      .add-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 12px;
+        padding-top: 2px;
+        font-family: helvetica;
+        font-size: 13px;
+
+        .add-story-text {
+          font-weight: bold;
+          color: $font-purple;
+          padding-bottom: 6px;
+        }
+
+        .share-text {
+          color: $font-gray;
+
+        }
+      }
+    }
+  }
+
+  .aside-suggested {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+    border: $post-border;
+
+    .suggested-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    
+
+      .suggeted-groups {
+        color: gray;
+        font-weight: bold;
+      }
+
+      .suggeted-see-all {
+      color: rgb(63, 63, 236);
+      }
+    }
+
+    .other-post {
+      display: flex;
+      flex-direction: column;
+      border: $post-border;
+
+      .other-post-pic {
+        height: 160px;
+        margin-bottom: 12px;
+      }
+
+      .other-details-container {
+        display: flex;
+      justify-content: space-between;
+
+        .other-details {
+          display: flex;
+          flex-direction: column;
+          padding-left: 8px;
+
+          .other-details-name {
+             color: #5672A9;
+             font-weight: bold;
+          }
+
+          .other-details-friends {
+            padding-top: 3px;
+            padding-bottom: 10px;
+            color: $font-gray;
+          }
+        }
+
+        .other-join {
+          height: 12px;
+          padding: 6px;
+          margin-right: 7px;
+          border: $post-border;
+          color: gray;
+          font-size: 0.9em;
+          font-weight: bold;
+          background-color: rgb(246, 248, 252);
+        }
+      }
+    }
+  }
+}
